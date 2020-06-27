@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using SimpleCheckout.Entities;
 
 namespace SimpleCheckout.Models
 {
@@ -24,6 +25,10 @@ namespace SimpleCheckout.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductDetail> ProductDetails { get; set; }
+        public DbSet<Mobile> Mobiles { get; set; }
 
         public static ApplicationDbContext Create()
         {

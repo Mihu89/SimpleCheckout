@@ -55,7 +55,7 @@ namespace SimpleCheckout
             //   consumerSecret: "");
 
             //app.UseFacebookAuthentication(
-            //   appId: "",
+            //   appId: "588102025172619",
             //   appSecret: "");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()

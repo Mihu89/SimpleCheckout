@@ -12,6 +12,7 @@ namespace SimpleCheckout
     {
         protected void Application_Start()
         {
+            UnityConfig.Bootstrap();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
